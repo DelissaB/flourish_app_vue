@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import LocationsIndex from "../views/LocationsIndex.vue";
+import PlantsIndex from "../views/PlantsIndex.vue";
 
 Vue.use(VueRouter);
 
@@ -23,6 +24,11 @@ const routes = [
     path: "/locations",
     name: "locations-index",
     component: LocationsIndex,
+  },
+  {
+    path: "/plants",
+    name: "plants-index",
+    component: PlantsIndex,
   },
 ];
 
