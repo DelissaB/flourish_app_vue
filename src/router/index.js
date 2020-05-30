@@ -4,6 +4,8 @@ import Home from "../views/Home.vue";
 import LocationsIndex from "../views/LocationsIndex.vue";
 import PlantsIndex from "../views/PlantsIndex.vue";
 
+import LocationsShow from "../views/LocationsShow.vue";
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -29,6 +31,11 @@ const routes = [
     path: "/plants",
     name: "plants-index",
     component: PlantsIndex,
+  },
+  {
+    path: "/locations/:id",
+    name: "locations - show",
+    component: LocationsShow,
   },
 ];
 

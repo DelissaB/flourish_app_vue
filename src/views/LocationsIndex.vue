@@ -2,7 +2,7 @@
   <div class="locations">
     <h1>Locations</h1>
     <div v-for="location in locations">
-      <h2>{{ location.neighborhoods }}</h2>
+      <h2>Neighborhood: {{ location.neighborhoods }}</h2>
       <p>Address: {{ location.address }}</p>
       <p>Zipcode: {{ location.zipcode }}</p>
     </div>
