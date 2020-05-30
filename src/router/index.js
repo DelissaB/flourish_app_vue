@@ -3,10 +3,10 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import LocationsIndex from "../views/LocationsIndex.vue";
 import PlantsIndex from "../views/PlantsIndex.vue";
-
 import LocationsShow from "../views/LocationsShow.vue";
 import Signup from "../views/Signup.vue";
 import Login from "../views/Login.vue";
+import Logout from "../views/Logout.vue";
 
 Vue.use(VueRouter);
 
@@ -39,8 +39,21 @@ const routes = [
     name: "locations - show",
     component: LocationsShow,
   },
-  { path: "/signup", name: "signup", component: Signup },
-  { path: "/login", name: "login", component: Login },
+  {
+    path: "/signup",
+    name: "signup",
+    component: Signup,
+  },
+  {
+    path: "/login",
+    name: "login",
+    component: Login,
+  },
+  {
+    path: "/logout",
+    name: "logout",
+    component: Logout,
+  },
 ];
 
 const router = new VueRouter({
