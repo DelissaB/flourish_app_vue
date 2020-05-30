@@ -5,6 +5,7 @@ import LocationsIndex from "../views/LocationsIndex.vue";
 import PlantsIndex from "../views/PlantsIndex.vue";
 
 import LocationsShow from "../views/LocationsShow.vue";
+import Signup from "../views/Signup.vue";
 
 Vue.use(VueRouter);
 
@@ -37,6 +38,7 @@ const routes = [
     name: "locations - show",
     component: LocationsShow,
   },
+  { path: "/signup", name: "signup", component: Signup },
 ];
 
 const router = new VueRouter({
